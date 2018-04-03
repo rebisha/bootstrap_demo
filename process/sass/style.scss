@@ -1,17 +1,34 @@
- html {
-  font-size: 62.5%;
+@import "variables.scss";
+@import "base.scss";
+
+
+li {
+  color : $color-lists;
+}
+ul li a{
+  color : $color-lists;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 1.8rem;
-  font-family: 'Helvetica', sans-serif;
-  color: #022933;
-  background-color: #EEE8D6;
+#forms {
+  font-family : $font-highlight;
 }
+.media {
+  margin : 0;
+  padding : 0;
+  list-style : none;
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+  .item {
+    margin-bottom : 10px;
+    border-top : 2px dotted $red;
+    padding-top: 10px;
+  }
+  img {
+    float : left;
+    margin-right : 10px;
+  }
+  .head {
+    margin : 0;
+    padding : 0;
+    font-size : 2rem;
+  }
 }
