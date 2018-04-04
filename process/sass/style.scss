@@ -1,34 +1,11 @@
-@import "variables.scss";
-@import "base.scss";
+@import "variables";
+@import "normalize";
+@import "mixin";
+@import "base";
+@import "interface";
+
+@import "modules/backgrounds";
+@import "modules/media"; 
 
 
-li {
-  color : $color-lists;
-}
-ul li a{
-  color : $color-lists;
-}
 
-#forms {
-  font-family : $font-highlight;
-}
-.media {
-  margin : 0;
-  padding : 0;
-  list-style : none;
-
-  .item {
-    margin-bottom : 10px;
-    border-top : 2px dotted $red;
-    padding-top: 10px;
-  }
-  img {
-    float : left;
-    margin-right : 10px;
-  }
-  .head {
-    margin : 0;
-    padding : 0;
-    font-size : 2rem;
-  }
-}
