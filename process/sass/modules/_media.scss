@@ -9,7 +9,7 @@
       padding-left: 10px;
       border-top : 2px dotted $red;
       &:hover{
-        background: $yellow;
+        background: transparentize($yellow, .3);
       }
       &:last-of-type {
         border-bottom : 2px dotted $red;
@@ -28,10 +28,10 @@
   }
 
   li {
-    color : $color-lists;
+    color : $blue;
   }
   ul li a{
-    color : $color-lists;
+    color : $blue;
   }
   
   #forms {
