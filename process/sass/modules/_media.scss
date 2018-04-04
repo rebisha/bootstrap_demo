@@ -4,9 +4,17 @@
     list-style : none;
   
     .item {
-      margin-bottom : 10px;
-      border-top : 2px dotted $red;
+      padding-bottom : 10px;
       padding-top: 10px;
+      padding-left: 10px;
+      border-top : 2px dotted $red;
+      &:hover{
+        background: $yellow;
+      }
+      &:last-of-type {
+        border-bottom : 2px dotted $red;
+      }
+      @include clearfix;
     }
     img {
       float : left;
