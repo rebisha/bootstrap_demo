@@ -1,0 +1,60 @@
+.grid {
+    @include clearfix;
+    .item {
+        float: left;
+        @include imagegrid(3, 2%);
+    }
+    img {
+        display : block;
+        max-width: 50%;
+    }
+    .project-name {
+        padding: 10px; 
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include sans-serif-font;
+      }
+      i {
+        color : $white;
+        background: $gray-900;
+        padding: 10px;
+        border-radius: 50% ;
+        max-width : 20%;
+        text-align : center;
+    }
+}
+
+
+
+@media (max-width : 875px) {
+    .container {
+       max-width: 80%;    
+        .grid{
+            @include clearfix;
+            .item {
+                @include imagegrid(2, 7%); 
+                img {
+                    display : block;
+                    margin-left: 20px;
+                }
+                .project-name {
+                    text-align: center
+                }
+                i {
+                    padding: 10px;
+                    max-width: 20%;
+                    text-align: center;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width : 990px) {
+    .container {
+        max-width: 100%;
+    }
+}
